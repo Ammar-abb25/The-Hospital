@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Managemant System</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./styles/favicon_package_v0.16 (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./styles/favicon_package_v0.16 (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./styles/favicon_package_v0.16 (1)/favicon-16x16.png">
+    <link rel="manifest" href="./styles/favicon_package_v0.16 (1)/site.webmanifest">
+    <link rel="mask-icon" href="./styles/favicon_package_v0.16 (1)/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        #pha-h2 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="./images/logo2.png" class="logo-img">
+        </div>
+        <div class="head">THE HospitaL</div>
+        <nav>
+            <ul class="anc">
+                <li id="card1"><a href="./index.html">Home</a></li>
+                <li id="card2"><a href="./about.html">About Us</a></li>
+                <li id="card3"><a href="./services.html">Services</a></li>
+                <li id="card4"><a href="./doctors.html">Doctor</a></li>
+                <li id="card5"><a href="./reservation.html">Reservation</a></li>
+                <li id="card6"><a href="./pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Pharmacy Page -->
+    <section class="contact">
+        <h1> Hospital Pharmacy</h1>
+        <form method="post" id="form">
+
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div>
+                <label for="contact">Contact Information (Email or Phone):</label>
+                <input type="text" id="contact" name="contact" placeholder="Enter your email or phone number" required>
+            </div>
+
+            <div>
+                <label for="medicine">Select Medicine:</label>
+                <select id="medicine" name="medicine" required>
+                    <option value="" disabled selected>Select medicine</option>
+                    <option value="Paracetamol">Paracetamol</option>
+                    <option value="Amoxicillin">Amoxicillin</option>
+                    <option value="Cough Syrup">Cough Syrup</option>
+                    <option value="Metformin">Metformin</option>
+                    <option value="Atenolol">Atenolol</option>
+                    <option value="Ibuprofen">Ibuprofen</option>
+                    <option value="Loratadine">Loratadine</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+            </div>
+
+            <div>
+                <label for="prescription">Prescription (if required):</label>
+                <input type="file" id="prescription" name="prescription" placeholder="if required" accept=".jpg, .jpeg, .png, .pdf,">
+            </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th> Category </th>
+                        <th>Price ( USD )</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paracetamol</td>
+                        <td>Pain Reliever</td>
+                        <td>$5.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin</td>
+                        <td>Antibiotic</td>
+                        <td>$8.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Cough Syrup</td>
+                        <td>Cold & Flu</td>
+                        <td>$4.50</td>
+                        <td>Out of Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Metformin</td>
+                        <td>Diabetes Medication</td>
+                        <td>$12.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Atenolol</td>
+                        <td>Blood Pressure</td>
+                        <td>$7.50</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Ibuprofen</td>
+                        <td>Anti-inflammatory</td>
+                        <td>$3.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Loratadine</td>
+                        <td>Allergy Relief</td>
+                        <td>$6.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Call:-066 123 4567</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="copy">
+        <p style="color: black;">&copy; 2024 THE HospitaL. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
